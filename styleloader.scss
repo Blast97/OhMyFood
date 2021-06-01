@@ -1,0 +1,208 @@
+$primaire:#9356dc;
+$secondaire:#c968db;
+$tertiaire: #99E2D0;
+
+  
+body {
+  
+  
+
+  .cadreloader{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    @media screen and (min-width:625px){
+      width: 80%;
+      }
+    
+    
+    --effect: hover 20s linear infinite;
+    
+    *{
+      margin:0;
+    }
+  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    animation: fadeOut 5s;
+    animation-fill-mode: forwards;
+
+
+    @keyframes fadeOut {
+
+        0% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            visibility: visible;
+        }
+
+        100% {
+            opacity: 0;
+            -webkit-transform: translateX(0);
+            visibility: hidden;
+        }
+        
+    }
+
+        .trait{
+
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+
+
+        .one{
+          border-left: 3px solid $tertiaire;
+          box-shadow: rgb(202, 202, 202) 60px 120px 90px 1px;
+          position: absolute;
+          left: 18%;
+          bottom: 15%;
+        
+          height: 90%;
+          width: 3rem;
+          transform: rotate(45deg);
+        }
+
+        .two{
+
+          border-left: 3px solid $tertiaire;
+          box-shadow: rgb(219, 219, 219) 25px 200px 80px 1px;
+          position: absolute;
+
+          left: 75%;
+          top: 15%;
+          height: 120%;
+          width: 3rem;
+          transform: rotate(47deg);
+        }
+      }
+
+
+        .anime {
+            text-align: center;
+            margin-bottom: 2rem;
+    
+  
+        .espace{
+            margin-right: 1.2rem;
+        }
+
+        .tel{
+            display: inline-flex;
+        }
+    
+       p {
+
+          display: inline-block;
+          position:relative;
+
+         font-size: 7em;
+         font-family: arial;
+
+         color: $primaire;
+         text-align: center;
+         text-transform: uppercase;  
+
+         font-weight: 900;
+         transform: scale(.8);
+      
+         -webkit-text-stroke: 0.3rem rgb(230, 230, 230);
+      }
+  
+      p:nth-child(1) {
+         animation: var(--effect);
+      }
+  
+      p:nth-child(2) {
+        animation: var(--effect) .15s;
+      }
+  
+      p:nth-child(3) {
+        animation: var(--effect) .25s;
+      }
+  
+      p:nth-child(4) {
+        animation: var(--effect) .35s;
+      }
+  
+      p:nth-child(5) {
+        animation: var(--effect) .45s;
+      }
+  
+      p:nth-child(6) {
+        animation: var(--effect) .60s;
+      }
+  
+      p:nth-child(7) {
+        animation: var(--effect) .65s;
+      }
+
+      p:nth-child(8) {
+        animation: var(--effect) .75s;
+      }
+  
+      @keyframes hover {
+        20% {
+           transform: scale(.6);
+           color: $primaire;
+           -webkit-text-stroke: 0.1rem $primaire;
+        }
+  
+        40% {
+           transform: scale(1);
+           color: $secondaire;
+           -webkit-text-stroke: 0.1875rem $secondaire;
+           filter: drop-shadow(0 0 0.0625rem white)drop-shadow(0 0 0.0625rem rgb(230, 230, 230))drop-shadow(0 0 0.1875rem rgb(216, 215, 215))drop-shadow(0 0 0.3125rem black)hue-rotate(7turn);
+        }
+  
+        60% {
+           transform: scale(.9);
+           color: $tertiaire;
+           -webkit-text-stroke: 0.2rem $tertiaire;
+        }
+  
+      }
+
+      .chargement{
+         width: 18rem;
+         height: 3rem;
+         margin: 3rem auto 0rem auto;
+
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         border: 0.2rem double $secondaire;
+         box-shadow: rgb(154, 47, 255) 5px 3px 10px 4px;
+         border-radius: 2rem;
+
+   
+         .rotate{
+          color: $primaire;
+
+           font-size: 2rem;  
+           font-weight: bold;
+           -webkit-text-stroke: 2px rgb(172, 172, 172);
+
+           animation: rotation 5s infinite linear;      
+        }
+
+        @keyframes rotation {
+		
+          from {
+				      transform: rotateX(0deg);
+          }
+		
+          to {
+				    transform: rotateX(360deg);
+          }
+
+        }
+
+      }
+    }
+  }
+}

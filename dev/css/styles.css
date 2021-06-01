@@ -1,0 +1,651 @@
+body {
+  width: 100%;
+  height: auto;
+  margin-left: 0rem;
+  font-family: 'roboto';
+  color: black;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 625px) {
+  body {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background: url(favour-otunji-dD7xFyDzES4-unsplash.jpg) 10% 50% no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+.conteneur header, .conteneur .zone_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteneur header #zone_logo, .conteneur header .zone_postlogo .lieux, .conteneur header .zone_postlogo .lieux .lot, .conteneur .zone_nav .numeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteneur .zone_nav .annonces, .conteneur .zone_restaurant .annonces {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 0rem 0rem 2rem 1rem;
+}
+
+.conteneur {
+  position: relative;
+  background: white;
+  -webkit-animation: fadeIn 6s;
+          animation: fadeIn 6s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.conteneur header {
+  width: auto;
+  height: auto;
+}
+
+.conteneur header #zone_logo {
+  width: auto;
+  height: 5rem;
+  margin: 1rem 0rem 0.2rem 0rem;
+}
+
+.conteneur header #zone_logo #logo {
+  width: 125%;
+  height: auto;
+}
+
+@media screen and (min-width: 625px) and (max-width: 1023px) {
+  .conteneur header #zone_logo {
+    height: 6rem;
+    margin: 2rem 0rem 0.4rem -2rem;
+  }
+  .conteneur header #zone_logo #logo {
+    width: 125%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .conteneur header #zone_logo {
+    height: 8.5rem;
+    margin: 2rem 0rem 0.4rem -5rem;
+  }
+  .conteneur header #zone_logo #logo {
+    width: 150%;
+    height: auto;
+  }
+}
+
+.conteneur header .zone_postlogo {
+  width: auto;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.conteneur header .zone_postlogo .lieux {
+  width: auto;
+  height: 4rem;
+  background-color: #e6e6e6;
+  border-top: 0.3rem solid #cecece;
+}
+
+.conteneur header .zone_postlogo .lieux .lot {
+  width: 20rem;
+  height: auto;
+  margin: auto;
+}
+
+.conteneur header .zone_postlogo .lieux .lot .fa-map-marker-alt {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #4d4d4d;
+  padding: 0rem 1rem 0rem 0rem;
+}
+
+.conteneur header .zone_postlogo .lieux .lot .titre_lieux {
+  width: 50%;
+  height: 2rem;
+  background-color: #e6e6e6;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #0d0d0d;
+}
+
+@media screen and (min-width: 625px) and (max-width: 1023px) {
+  .conteneur header .zone_postlogo .lieux {
+    height: 4rem;
+  }
+  .conteneur header .zone_postlogo .lieux .lot {
+    width: 26rem;
+    height: 3rem;
+    padding-left: 4rem;
+  }
+  .conteneur header .zone_postlogo .lieux .lot .fa-map-marker-alt {
+    font-size: 1.5rem;
+    padding: 0rem 1rem 0rem 0rem;
+  }
+  .conteneur header .zone_postlogo .lieux .lot .titre_lieux {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .conteneur header .zone_postlogo .lieux {
+    height: 4.5rem;
+  }
+  .conteneur header .zone_postlogo .lieux .lot {
+    width: 35rem;
+    height: 3rem;
+    padding-left: 8rem;
+  }
+  .conteneur header .zone_postlogo .lieux .lot .fa-map-marker-alt {
+    font-size: 2rem;
+    padding: 0rem 2rem 0rem 0rem;
+  }
+  .conteneur header .zone_postlogo .lieux .lot .titre_lieux {
+    width: 60%;
+    font-size: 1.6rem;
+  }
+}
+
+.conteneur header .zone_postlogo .zone_reservez {
+  width: auto;
+  height: 18rem;
+  text-align: center;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .divintro {
+  width: 19rem;
+  height: auto;
+  margin: 2.5rem auto 0rem auto;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .divintro .annonces {
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .div_ptiteannonce {
+  width: 24.7rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .div_ptiteannonce .petite_annonce {
+  width: auto;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: -1.3rem auto 1.9rem auto;
+  color: #737373;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .zone_bouton {
+  width: 70%;
+  height: auto;
+  margin: 0rem auto 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .zone_bouton a {
+  color: #f0f0f0;
+  font-size: large;
+  font-weight: 900;
+}
+
+.conteneur header .zone_postlogo .zone_reservez .zone_bouton .bouton_violin {
+  width: 16.5rem;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.02rem solid #9c9c9c;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 0rem 0.5rem 1rem 0rem #9c9c9c;
+          box-shadow: 0rem 0.5rem 1rem 0rem #9c9c9c;
+  background: linear-gradient(168deg, #c968db 60%, #9356dc 90%);
+}
+
+.conteneur header .zone_postlogo .zone_reservez .zone_bouton .bouton_violin:hover {
+  background: linear-gradient(168deg, #d07de0 60%, #a16be0 90%);
+  -webkit-box-shadow: 0.8rem 0.7rem 0.7rem 0.1rem #9c9c9c;
+          box-shadow: 0.8rem 0.7rem 0.7rem 0.1rem #9c9c9c;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 625px) and (min-width: 1024px) {
+  .conteneur header .zone_postlogo .zone_reservez {
+    height: 20rem;
+  }
+  .conteneur header .zone_postlogo .zone_reservez .divintro {
+    width: 20rem;
+    height: auto;
+    margin: 3rem auto 0rem auto;
+  }
+  .conteneur header .zone_postlogo .zone_reservez .divintro .annonces {
+    font-size: 1.9rem;
+    font-weight: bolder;
+  }
+  .conteneur header .zone_postlogo .zone_reservez .div_ptiteannonce {
+    width: 26rem;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  .conteneur header .zone_postlogo .zone_reservez .div_ptiteannonce .petite_annonce {
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: -1rem auto 2rem auto;
+    color: #737373;
+  }
+}
+
+.conteneur .zone_nav {
+  width: auto;
+  height: 30rem;
+  margin: 2rem 0rem 1.5rem 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 625px) and (max-width: 1023px) {
+  .conteneur .zone_nav .annonces {
+    margin: 0rem 0rem 3rem 2.5rem;
+    border-bottom: 0.2rem solid black;
+    width: 12.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .conteneur .zone_nav .cadrenav.un {
+    margin-left: 20%;
+  }
+  .conteneur .zone_nav .cadrenav.deux {
+    margin-left: 27%;
+  }
+  .conteneur .zone_nav .cadrenav.trois {
+    margin-left: 34%;
+  }
+  .conteneur .zone_nav .annonces {
+    margin: 0rem 0rem 3rem 2.5rem;
+    border-bottom: 0.2rem solid black;
+    width: 12.5rem;
+  }
+}
+
+.conteneur .zone_nav .cadrenav {
+  width: 90%;
+  height: 17%;
+  margin: 0rem auto 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  border: 0.1rem solid #e6e6e6;
+  -webkit-box-shadow: 0rem 1rem 1.5rem #e6e6e6;
+          box-shadow: 0rem 1rem 1.5rem #e6e6e6;
+  background-color: whitesmoke;
+}
+
+.conteneur .zone_nav .cadrenav:hover {
+  background: #ece1f9;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.conteneur .zone_nav .cadrenav:hover .fa-mobile-alt, .conteneur .zone_nav .cadrenav:hover .fa-list-ul, .conteneur .zone_nav .cadrenav:hover .fa-store {
+  color: #9356dc;
+}
+
+.conteneur .zone_nav .cadrenav a {
+  color: #333333;
+}
+
+@media screen and (min-width: 1024px) {
+  .conteneur .zone_nav .cadrenav {
+    width: 50%;
+    border: 0.15rem solid #e6e6e6;
+    -webkit-box-shadow: 0rem 1.7rem 1.5rem #cfcfcf;
+            box-shadow: 0rem 1.7rem 1.5rem #cfcfcf;
+  }
+}
+
+.conteneur .zone_nav .numeros {
+  width: 2rem;
+  height: 2rem;
+  margin-left: -1rem;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.conteneur .zone_nav .nav {
+  font-size: 1.07rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 5rem;
+  padding-left: 2rem;
+  border: 3rem, solid, grey;
+  border-radius: 10rem;
+}
+
+.conteneur .zone_nav .fa-mobile-alt, .conteneur .zone_nav .fa-list-ul, .conteneur .zone_nav .fa-store {
+  padding-left: 2rem;
+  color: #737373;
+}
+
+.conteneur .zone_nav .fa-mobile-alt {
+  font-size: 1.7rem;
+}
+
+.conteneur .zone_nav .fa-list-ul, .conteneur .zone_nav .fa-store {
+  font-size: 1.3rem;
+}
+
+.conteneur .zone_restaurant {
+  width: auto;
+  height: auto;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  background-color: whitesmoke;
+}
+
+.conteneur .zone_restaurant .cadres_menu {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure {
+  width: 25rem;
+  height: 20rem;
+  margin: 2rem auto 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 0.2rem solid #e6e6e6;
+  -webkit-box-shadow: 0rem 1rem 1.5rem #d2d2d2;
+          box-shadow: 0rem 1rem 1.5rem #d2d2d2;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure .palettegout, .conteneur .zone_restaurant .cadres_menu figure .noteenchantee, .conteneur .zone_restaurant .cadres_menu figure .alafrancaise, .conteneur .zone_restaurant .cadres_menu figure .delicedessens {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure .palettegout {
+  bottom: 5rem;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure .noteenchantee {
+  bottom: -1rem;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure .alafrancaise {
+  bottom: 6.5rem;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure .delicedessens {
+  bottom: 6rem;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption {
+  width: 100%;
+  height: 6rem;
+  background-color: white;
+  position: relative;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption {
+  width: auto;
+  height: auto;
+  z-index: 1;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .pair {
+  margin-left: 1rem;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .pair h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .pair p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin: -1.2rem auto auto 0rem;
+  color: #595959;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .coeur {
+  width: auto;
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .coeur .fa-heart {
+  margin-top: 1.6rem;
+  font-size: 2.2rem;
+  color: #b1b1b1;
+  -webkit-transition: color 2s ease-out;
+  transition: color 2s ease-out;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .coeur .fa-heart:active {
+  font-weight: bold;
+  color: #c968db;
+  cursor: pointer;
+  -webkit-transition: color 1s ease-in;
+  transition: color 1s ease-in;
+}
+
+.conteneur .zone_restaurant .cadres_menu figure .cadre_vert {
+  width: 6rem;
+  height: 2rem;
+  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.20rem;
+  color: #17a28b;
+  background-color: #acf3e7;
+}
+
+@media screen and (min-width: 625px) and (max-width: 1023px) {
+  .conteneur .zone_restaurant .annonces {
+    margin: 0rem 0rem 3rem 2.5rem;
+    border-bottom: 0.2rem solid black;
+    width: 10rem;
+  }
+  .conteneur .zone_restaurant .cadres_menu {
+    width: 90%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 2rem;
+    border: 0.2rem solid #e4d5f6;
+    -webkit-box-shadow: 1.5rem 0.2rem 2rem #b8b8b8;
+            box-shadow: 1.5rem 0.2rem 2rem #b8b8b8;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .conteneur .zone_restaurant .annonces {
+    margin: 0rem 0rem 3rem 2.5rem;
+    border-bottom: 0.2rem solid black;
+    width: 10rem;
+  }
+  .conteneur .zone_restaurant .cadres_menu {
+    width: 80%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 2rem;
+    border: 0.2rem solid #e4d5f6;
+    -webkit-box-shadow: 1.5rem 0.2rem 2rem #b8b8b8;
+            box-shadow: 1.5rem 0.2rem 2rem #b8b8b8;
+  }
+}
+
+.conteneur footer {
+  font-size: large;
+  color: white;
+  width: auto;
+  height: 16rem;
+  margin-top: -1.5rem;
+  background: #383838;
+  border: 3rem, solid, lighten black, 22%;
+}
+
+.conteneur footer ul {
+  list-style: none;
+  padding-left: 0rem;
+  margin-left: 2rem;
+}
+
+.conteneur footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.conteneur footer ul li:hover {
+  color: #c968db;
+}
+
+.conteneur footer ul li a {
+  color: white;
+}
+
+.conteneur footer ul li a:hover {
+  color: #c968db;
+}
+
+.conteneur footer ul .txticonefooter {
+  font-weight: bolder;
+}
+
+.conteneur footer ul .txticonefooter .fa-hands-helping, .conteneur footer ul .txticonefooter .fa-utensils {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.conteneur footer #titre_footer {
+  font-family: "Shrikhand";
+  font-size: x-large;
+  color: white;
+  padding-top: 1.5rem;
+  margin-left: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
