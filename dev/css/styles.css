@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: auto;
-  margin-left: 0rem;
+  margin: auto;
   font-family: 'roboto';
   color: black;
 }
@@ -50,6 +50,8 @@ body a {
 }
 
 .conteneur {
+  width: 100%;
+  height: auto;
   position: relative;
   background: white;
   -webkit-animation: fadeIn 6s;
@@ -112,11 +114,12 @@ body a {
 @media screen and (min-width: 1024px) {
   .conteneur header #zone_logo {
     height: 8.5rem;
-    margin: 2rem 0rem 0.4rem -5rem;
+    margin: 2rem 0rem 0.4rem 0rem;
   }
   .conteneur header #zone_logo #logo {
     width: 150%;
     height: auto;
+    margin-left: -20%;
   }
 }
 
@@ -359,7 +362,7 @@ body a {
   border: 0.1rem solid #e6e6e6;
   -webkit-box-shadow: 0rem 1rem 1.5rem #e6e6e6;
           box-shadow: 0rem 1rem 1.5rem #e6e6e6;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .conteneur .zone_nav .cadrenav:hover {
@@ -518,13 +521,13 @@ body a {
 }
 
 .conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .coeur {
-  width: auto;
+  width: 10%;
   height: 5rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .conteneur .zone_restaurant .cadres_menu figure figcaption .souscaption .coeur .fa-heart {
-  margin-top: 1.6rem;
+  margin-top: 1.8rem;
   font-size: 2.2rem;
   color: #b1b1b1;
   -webkit-transition: color 2s ease-out;

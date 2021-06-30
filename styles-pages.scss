@@ -8,11 +8,9 @@ $tertiaire: #99E2D0;
 
 
     body{
-
-        width: 100%;
+        width:100%;
         height: auto;
-        margin:auto;
-
+        margin: 0.5rem auto 0.5rem 0rem; 
         font-family: 'roboto';
         color: black;
         
@@ -58,44 +56,47 @@ $tertiaire: #99E2D0;
 
     // ------------------------------------
 .back-white{
-        
+
+    width: 100%;
+    height: auto;
+    
+    overflow-x: hidden;
+
+
     @media screen and (min-width:768px){
         width: auto;
         height: auto;
   
         border: 0.2rem solid rgb(131, 78, 131);
         box-shadow: 0rem 0.7rem 0.7rem rgb(230, 230, 230);
-        background-color: lighten(rgb(230, 230, 230), 8%);
+        background-color: lighten(rgb(246, 245, 245), 8%);
     }
     
     header{
         width: auto;
         height: auto;
 
-        @media screen and (min-width:1024px){
-          
-            background-color: white;
-           
+        @media screen and (min-width:1024px){          
+            background-color: white;      
         }
 
-
-        @extend %displaycolumn; 
         
+        @extend %displaycolumn; 
+
 
         #zone_logo{
           width: auto;
-          height: 3rem;
-          
+          height: 3rem; 
           display: flex;
           justify-content: start;
 
-          margin: 1.5rem 0rem 0.8rem 0rem;
+          margin: 1.5rem 0rem 0.8rem 0rem; 
 
           @extend %display_justicenter_aligncenter;
           
             .fa-arrow-left{
                width: auto;
-               height: auto;
+               height: auto; 
 
                margin: 0rem 0rem 0rem 1.5rem;
             
@@ -108,6 +109,8 @@ $tertiaire: #99E2D0;
 
               width: 100%;
               height: auto;
+              height: 2.4rem;
+              margin-right: 1.5rem;
 
               display: flex;
               justify-content: center;
@@ -153,33 +156,33 @@ $tertiaire: #99E2D0;
                 .logimg{
 
                    width: 100%;
-                   height: 2.3rem;
+                   height: 3.2rem;
                    margin-left: -4.5rem;
   
                    display: flex;
                    justify-content: center;
               
                 }
-  
-            
+       
             }
                      
         }
 
     .zone_image{  
-        width: auto;
+        width: auto; 
         height: auto;
+           
 
         .menu_image{
             width: 100%;
-            height: auto;
+            height: auto; 
         }
 
         @media screen and (min-width: 768px){
           
             max-width: 100%;
             height: 20rem;
-  
+
             display: flex;
             justify-content: center;
 
@@ -189,7 +192,7 @@ $tertiaire: #99E2D0;
                 position: absolute;
                 width: 72%;
                 height: auto;
-                border: 0.2rem solid rgba(131, 78, 131, 0.13); 
+                border: 0.2rem solid rgba(80, 255, 36, 0.13); 
             }
     
         }  
@@ -218,8 +221,9 @@ $tertiaire: #99E2D0;
 
     .zone_image_note{
 
+
         @media screen and (min-width: 768px){
-          
+
             max-width: 100%;
             height: 20rem;
   
@@ -261,6 +265,7 @@ $tertiaire: #99E2D0;
                position: relative;
                height: auto;
                bottom: 7.1rem;  
+               
 
 
                 @media screen and (min-width: 768px){
@@ -296,7 +301,7 @@ $tertiaire: #99E2D0;
         border: 0.2rem solid rgba(131, 78, 131, 0.123);
     }
 
-      width: auto;
+      width: auto;  
       height: auto;
      
       position: relative;
@@ -336,12 +341,13 @@ $tertiaire: #99E2D0;
     }
 
         .zone_bouton{
-        width: 12.5rem; 
+        width: auto; 
         height: auto;
         margin: 1rem auto 4rem auto;
 
         display: flex;
         justify-content: center;
+
 
           a{
             text-decoration: none;      

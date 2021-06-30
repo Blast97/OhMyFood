@@ -2,6 +2,7 @@ body .cadreloader {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  overflow-x: hidden;
   --effect: hover 20s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;

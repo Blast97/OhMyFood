@@ -12,16 +12,20 @@ $tertiaire: #99E2D0;
 @mixin zone-intro-resto{
     width: auto;
     height: 5rem;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 0rem 2rem 0rem;
         
     display: flex;
     justify-content: space-between;
+    justify-content: space-around;
+  
 }
 
-@mixin txtintrorestopage($typo:'Shrikhand', $size:xx-large){
+@mixin txtintrorestopage($typo:'Shrikhand', $size:2rem){
     font-size: $size;
     font-family: $typo;
-    font-weight: bold;
+    font-weight: bold; 
+    width: 80%;
+
 }
 
 
@@ -47,6 +51,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
 
       width: 16.5rem;
       height: 3.5rem;
+      
 
       display: flex;
       align-items: center;
@@ -73,11 +78,12 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
 //mixin pour les cadres nav (pages)
 
 @mixin cadrepagenav {
-
+  
 
     width: 90%;
     height: 6.5em;
     margin-bottom: 1rem;
+    margin-left: 1rem;
 
     color: black;
     background-color: white;  
@@ -104,7 +110,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
         }
 
 
-              .pair{
+              .pair{ 
                 width: 80%;
                 height: auto;
                 padding-left: 1rem;
@@ -112,7 +118,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
 
                   &:hover > h3 {
 
-                    width: 100%;
+                    width: auto;
                     transition: 1s ease-in-out;
                     white-space: nowrap;  
                     overflow: hidden;
@@ -122,7 +128,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
                   
                     &:hover > p{
                       
-                      width: 100%;
+                      width: auto;
                       transition: 1s ease-in-out;
                       white-space: nowrap;  
                       overflow: hidden;
@@ -133,7 +139,8 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
                   h3{
                     font-size: 1.3rem;
                     font-weight: bold;
-                    margin-top: 0.5rem;           
+                    margin-top: 0.5rem;
+                        
                   } 
 
                 
@@ -152,7 +159,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
               transition: 1s ease-in-out;
               white-space: nowrap;  
               overflow: hidden;
-              text-overflow: ellipsis;   
+              text-overflow: ellipsis;  
             }   
             
             &:hover .pair > h3{
@@ -162,6 +169,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
               white-space: nowrap;  
               overflow: hidden;
               text-overflow: ellipsis;
+             
             }  
             
             
@@ -172,6 +180,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
               white-space: nowrap;  
               overflow: hidden;
               text-overflow: ellipsis;
+             
             }
                  
 
@@ -181,6 +190,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
               height: 100%;
               display: inline-flex;
               justify-content: flex-end;
+              
 
                            
                 .slidergreen{
@@ -227,7 +237,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
                     font-weight: bold;
                     
                     display: flex;            
-                    margin: 2.5rem 1rem 0rem 0rem;                             
+                    margin: 3rem 1rem 0rem 0rem;                             
                 }  
             
             }
@@ -255,17 +265,19 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
 //mixin remplissage des coeur
 
 @mixin remplircoeur{
-        
-        width: auto;
+
+        width: 10%;
         height: 5rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
+
+        
 
         .fa-heart{
 
-            margin-top: 1.6rem;
+            margin-top: 1.8rem;
             font-size: 2.2rem;
             color: rgb(177, 177, 177);
-            transition: color 2s ease-out;          
+            transition: color 2s ease-out;        
             
             
              &:active {
@@ -273,6 +285,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
               color: #c968db;
               cursor: pointer;
               transition: color 1s ease-in;
+
             }          
         }
 }
@@ -291,6 +304,7 @@ $light: linear-gradient(168deg, lighten($secondaire, 5%) 60%, lighten($primaire,
 
     padding-top: 1.5rem;
     margin-left: 2rem;
+
 }
 
 @mixin footer ($size:large, $color:white){
