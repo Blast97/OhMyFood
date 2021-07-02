@@ -2,7 +2,7 @@ body {
   width: 100%;
   height: auto;
   margin: auto;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   color: black;
 }
 
@@ -154,6 +154,7 @@ body a {
   height: 2rem;
   background-color: #e6e6e6;
   border: none;
+  outline-style: none;
   font-size: 1.3rem;
   font-weight: bolder;
   color: #0d0d0d;
@@ -411,7 +412,6 @@ body a {
   width: 90%;
   height: 5rem;
   padding-left: 2rem;
-  border: 3rem, solid, grey;
   border-radius: 10rem;
 }
 
@@ -608,7 +608,6 @@ body a {
   height: 16rem;
   margin-top: -1.5rem;
   background: #383838;
-  border: 3rem, solid, lighten black, 22%;
 }
 
 .conteneur footer ul {

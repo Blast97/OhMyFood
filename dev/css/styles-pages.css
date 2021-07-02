@@ -2,7 +2,7 @@ body {
   width: 100%;
   height: auto;
   margin: 0.5rem auto 0.5rem 0rem;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   color: black;
 }
 
@@ -17,7 +17,7 @@ body a {
     height: auto;
     margin: auto;
     background: url(favour-otunji-dD7xFyDzES4-unsplash.jpg) 10% 50% no-repeat fixed;
-    background-image: cover;
+    background-size: cover;
   }
 }
 
@@ -169,7 +169,7 @@ body a {
 
 @media screen and (min-width: 768px) {
   .back-white header .zone_image {
-    max-width: 100%;
+    width: auto;
     height: 20rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -188,7 +188,7 @@ body a {
 
 @media screen and (min-width: 1024px) {
   .back-white header .zone_image {
-    max-width: auto;
+    width: auto;
     height: 20rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -344,7 +344,7 @@ body a {
 
 .back-white .cadrenavpage {
   width: 90%;
-  height: 6.5em;
+  height: 6.5rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
   color: black;
@@ -584,7 +584,6 @@ footer {
   height: 16rem;
   margin-top: -1.5rem;
   background: #383838;
-  border: 3rem, solid, lighten black, 22%;
 }
 
 footer ul {

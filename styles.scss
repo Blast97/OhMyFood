@@ -13,7 +13,7 @@ $secondaire:#c968db;
    
 
 
-        font-family: 'roboto';
+        font-family: 'Roboto', sans-serif;
         color: black;
     
         
@@ -161,11 +161,14 @@ $secondaire:#c968db;
                    width: 50%;
                    height:2rem;
                    background-color: rgb(230, 230, 230);
+                   
                    border: none;
-               
+                   outline-style: none;
+
                    font-size: 1.3rem;
                    font-weight: bolder;
-                    color: lighten(black, 5%); 
+                   color: lighten(black, 5%); 
+                    
                 }
             }
 
@@ -443,7 +446,6 @@ $secondaire:#c968db;
            height: 5rem;
  
            padding-left: 2rem;
-           border:3rem, solid, grey;
            border-radius: 10rem ;     
         }
 
@@ -664,5 +666,7 @@ $secondaire:#c968db;
     }
 
 }
+
+
 
 

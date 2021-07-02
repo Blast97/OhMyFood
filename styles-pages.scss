@@ -11,7 +11,7 @@ $tertiaire: #99E2D0;
         width:100%;
         height: auto;
         margin: 0.5rem auto 0.5rem 0rem; 
-        font-family: 'roboto';
+        font-family: 'Roboto', sans-serif;
         color: black;
         
         a{  
@@ -25,7 +25,7 @@ $tertiaire: #99E2D0;
             height: auto;
             margin: auto;
             background: url(favour-otunji-dD7xFyDzES4-unsplash.jpg) 10% 50% no-repeat fixed;
-            background-image: cover;
+            background-size: cover;
         }
 
         @media screen and (min-width:1024px){
@@ -180,7 +180,7 @@ $tertiaire: #99E2D0;
 
         @media screen and (min-width: 768px){
           
-            max-width: 100%;
+            width: auto;
             height: 20rem;
 
             display: flex;
@@ -199,7 +199,7 @@ $tertiaire: #99E2D0;
 
         @media screen and (min-width: 1024px){
           
-            max-width: auto;
+            width: auto;
             height: 20rem;
   
             display: flex;
